@@ -1,4 +1,4 @@
-### Naming Conventions in Java 
+### Naming Conventions in Java
 
 A programmer is always said to write clean codes, where naming has to be appropriate so that for any other programmer it acts as an easy way out to read the code. At a smaller level, this seems meaningless but think of the industrial level where it becomes necessary to write clean codes in order to save time for which there are certain rules been laid of which one of the factors is to name the keyword right which is termed as a naming convention in Java.
 
@@ -45,12 +45,14 @@ Interfaces : Runnable
              Serializable
 ```
 
+</ul>
 <h2>Type 2: Methods </h2>
+<ul>
 <li>Methods should be verbs, in mixed case with the first letter lowercase and with the first letter of each internal word capitalized.</li>
+</ul>
 
 ```
 public static void main(String [] args)  {}
-
 ```
 
 As the name suggests the method is supposed to be primarily method which indeed it is as main() method in java is the method from where the program begins its execution.
@@ -65,7 +67,6 @@ Variable names should not start with underscore \_ or dollar sign $ characters, 
 <li>Should be mnemonic i.e., designed to indicate to the casual observer the intent of its use.</li>
 <li>One-character variable names should be avoided except for temporary variables</li>
 <li>Common names for temporary variables are i, j, k, m, and n for integers; c, d, and e for characters.</li> 
-</ul>
 </ul>
 
 ```
@@ -95,7 +96,7 @@ java.util.Scanner ;
 java.io.*;
 ```
 
-As the name suggests in the first case we are trying to access the Scanner class from the java.util package and in other all classes(* standing for all) input-output classes making it so easy for another programmer to identify.
+As the name suggests in the first case we are trying to access the Scanner class from the java.util package and in other all classes(\* standing for all) input-output classes making it so easy for another programmer to identify.
 
 Note:
 
