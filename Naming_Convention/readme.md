@@ -1,4 +1,4 @@
-### Naming Conventions in Java
+### Naming Conventions in Java 
 
 A programmer is always said to write clean codes, where naming has to be appropriate so that for any other programmer it acts as an easy way out to read the code. At a smaller level, this seems meaningless but think of the industrial level where it becomes necessary to write clean codes in order to save time for which there are certain rules been laid of which one of the factors is to name the keyword right which is termed as a naming convention in Java.
 
@@ -13,7 +13,7 @@ If you are naming an interface, it should look like an adjective such as conside
 <li>Methods</li>
 Now if we do look closer a method is supposed to do something that it does contains in its body henceforth it should be a verb.
 <li>Constants</li>
-As the name suggests it should look like as we read it looks like it is fixed for examples PI, MAX_INT, MIN_INT, etc. as follows.
+As the name suggests it should look like as we read it looks like it is fixed for examples PI, MAX_INT, MIN_INT, etc. as follows :
 </ul>
 
 <h2>Naming Conventions in Java  </h2>
