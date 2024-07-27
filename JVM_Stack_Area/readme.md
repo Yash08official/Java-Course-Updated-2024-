@@ -1,15 +1,16 @@
 ### Java Virtual Machine (JVM) Stack Area
-
+<br>
 For every thread, JVM creates a separate stack at the time of thread creation. The memory for a Java Virtual Machine stack does not need to be contiguous. The Java virtual machine only performs two operations directly on Java stacks: it pushes and pops frames. And stack for a particular thread may be termed as Run – Time Stack. Every method call performed by that thread is stored in the corresponding run-time stack including parameters, local variables, intermediate computations, and other data. After completing a method, the corresponding entry from the stack is removed. After completing all method calls the stack becomes empty and that empty stack is destroyed by the JVM just before terminating the thread. The data stored in the stack is available for the corresponding thread and not available to the remaining threads. Hence we can say local data thread-safe. Each entry in the stack is called Stack Frame or Activation Record.
-
+<br>
 <img src= "./JVM.jpg">
-
+<br>
 <h3>Stack Frame Structure</h3>
-
+<br>
 The stack frame basically consists of three parts: Local Variable Array, Operand Stack & Frame Data. When JVM invokes a Java method, first it checks the class data to determine the number of words (size of the local variable array and operand stack, which is measured in words for each individual method) required by the method in the local variables array and operand stack. It creates a stack frame of the proper size for invoked method and pushes it onto the Java stack.
-
+<br>
 <ol>
 <li>Local Variable Array (LVA): </li>
+<br>
 <ul>
 <li>The local variables part of the stack frame is organized as a zero-based array of words.</li>
 <li>It contains all parameters and local variables of the method.</li>
@@ -21,6 +22,7 @@ The stack frame basically consists of three parts: Local Variable Array, Operand
 <li>The parameters are placed into the local variable array first, in the order in which they are declared.
 </li>
 <li>For Example: Let us consider a class Example having a method bike() then the local variable array will be as shown in the below diagram:</li>
+<br>
 
 ```
 // Class Declaration
@@ -33,22 +35,27 @@ class Example
   }
 }
 ```
-
+<br>
 <img src = "./jvm.2.jpg">
+<br>
 </ul>
 <li>Operand Stack (OS): </li>
+<br>
 <ul>
 <li>JVM uses operand stack as workspace like rough work or we can say for storing intermediate calculation’s result.</li>
 <li>The operand stack is organized as an array of words like a local variable array. But this is not accessed by using an index like local variable array rather it is accessed by some instructions that can push the value to the operand stack and some instructions that can pop values from the operand stack and some instructions that can perform required operations.</li>
 <li>For Example: Here is how a JVM will use this below code that would subtract two local variables that contain two ints and store the int result in a third local variable:</li>
+<br>
 
 <img src = "./reading.3.jpg">
-
+<br>
 <li>So here first two instructions iload_0 and iload_1 will push the values in the operand stack from a local variable array. And instruction isub will subtract these two values and store the result back to the operand stack and after istore_2 the result will pop out from the operand stack and will store into a local variable array at position 2.</li>
 </ul>
+<br>
 <img src = "./jvm.4.png">
-
+<br>
 <li>Frame Data (FD): </li>
+<br>
 <ul>
 <li>It contains all symbolic references (constant pool resolution) and normal method returns related to that particular method.</li>
 <li>It also contains a reference to the Exception table which provides the corresponding catch block information in the case of exceptions.</li>
