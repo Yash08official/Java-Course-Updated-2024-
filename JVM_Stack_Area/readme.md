@@ -1,12 +1,16 @@
 ### Java Virtual Machine (JVM) Stack Area
-<br>
+
 For every thread, JVM creates a separate stack at the time of thread creation. The memory for a Java Virtual Machine stack does not need to be contiguous. The Java virtual machine only performs two operations directly on Java stacks: it pushes and pops frames. And stack for a particular thread may be termed as Run – Time Stack. Every method call performed by that thread is stored in the corresponding run-time stack including parameters, local variables, intermediate computations, and other data. After completing a method, the corresponding entry from the stack is removed. After completing all method calls the stack becomes empty and that empty stack is destroyed by the JVM just before terminating the thread. The data stored in the stack is available for the corresponding thread and not available to the remaining threads. Hence we can say local data thread-safe. Each entry in the stack is called Stack Frame or Activation Record.
+
 <br>
+
 <img src= "./JVM.jpg">
+
 <br>
 <h3>Stack Frame Structure</h3>
 <br>
 The stack frame basically consists of three parts: Local Variable Array, Operand Stack & Frame Data. When JVM invokes a Java method, first it checks the class data to determine the number of words (size of the local variable array and operand stack, which is measured in words for each individual method) required by the method in the local variables array and operand stack. It creates a stack frame of the proper size for invoked method and pushes it onto the Java stack.
+<br>
 <br>
 <ol>
 <li>Local Variable Array (LVA): </li>
@@ -35,10 +39,14 @@ class Example
   }
 }
 ```
+
 <br>
+
 <img src = "./jvm.2.jpg">
 <br>
+<br>
 </ul>
+
 <li>Operand Stack (OS): </li>
 <br>
 <ul>
@@ -53,6 +61,7 @@ class Example
 </ul>
 <br>
 <img src = "./jvm.4.png">
+<br>
 <br>
 <li>Frame Data (FD): </li>
 <br>
