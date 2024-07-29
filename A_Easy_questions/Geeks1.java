@@ -4,7 +4,7 @@
 // } Driver Code Ends
 //User function Template for Java
 
-class Geeks{
+class Geeks1{
     
   // Function to print each word in single line
   public static void main(String[] args){
