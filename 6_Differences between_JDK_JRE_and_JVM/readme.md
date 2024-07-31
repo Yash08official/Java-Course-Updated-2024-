@@ -21,7 +21,6 @@ Don't get confused as we are going to discuss all of them one by one.<br>
 
 <ol>
 <li>JDK (Java Development Kit) is a Kit that provides the environment to develop and execute(run) the Java program. JDK is a kit(or package) that includes two things</li>
-<br>
 <ul>
 <li>Development Tools(to provide an environment to develop your java programs)</li>
 <li>JRE (to execute your java program).</li>
@@ -51,7 +50,7 @@ After having an adequate understanding of the components, now let us discuss the
 
 Consider a java source file saved as 'Example.java'. The file is compiled into a set of Byte Code that is stored in a ".class" file. Here it will be "Example.class". <br>
 
-<img src = "./JRE_JDK_JVM.2.jpg">
+<img src = "./JRE_JDK_JVM.2.jpg"><br>
 <em>Note: From above, media operation computing during the compile time can be interpreted.</em>
 <br>
 
@@ -66,7 +65,7 @@ The following actions occur at runtime as listed below:
 <li>Make appropriate calls to the underlying hardware</li>
 </ul>
 </ul>
-
+<br>
 <b>Now let us discuss in brief how JVM works out. It is as follows:</b>
 <br>
 
@@ -89,4 +88,3 @@ JVM becomes an instance of JRE at the runtime of a Java program. It is widely kn
 <br>
 
 <img src = "./jvm-3.3.jpg">
-
