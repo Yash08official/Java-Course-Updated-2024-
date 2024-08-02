@@ -37,7 +37,7 @@ Below is the screenshot of the output to help you to visualize the same thing, p
 <br>
 <output>Output in JAVA 6 version. </output>
 <br>
-<b>If run on JDK 7,8 and so on...</b>
+<li>If run on JDK 7,8 and so on...</li>
 <br>
 <img src = "./Screenshot-45-5.2.png">
 <br>
