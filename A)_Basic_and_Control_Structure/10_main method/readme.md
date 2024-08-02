@@ -34,11 +34,11 @@ Below is the screenshot of the output to help you to visualize the same thing, p
 <li>If run prior to JDK 7</li>
 <br>
 <img src = "./Screenshot-46-5.1.png">
-<br>
+<br><br>
 <output>Output in JAVA 6 version. </output>
-<br>
+<br><br>
 <li>If run on JDK 7,8 and so on...</li>
 <br>
 <img src = "./Screenshot-45-5.2.png">
-<br>
+<br><br>
 <output>Output in JAVA 7</output>
