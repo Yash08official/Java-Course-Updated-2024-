@@ -277,3 +277,50 @@ String s = "GeeksforGeeks";
 // Declare String using new operator 
 String s1 = new String("GeeksforGeeks"); 
 
+<li>B: Class </li>
+
+A class is a user-defined blueprint or prototype from which objects are created.  It represents the set of properties or methods that are common to all objects of one type. In general, class declarations can include these components, in order: 
+
+<ol>
+<li>Modifiers: A class can be public or has default access. Refer to access specifiers for classes or interfaces in Java</li>
+<li>Class name: The name should begin with an initial letter (capitalized by convention).</li>
+<li>Superclass(if any): The name of the class's parent (superclass), if any, preceded by the keyword extends. A class can only extend (subclass) one parent.</li>
+<li>Interfaces(if any): A comma-separated list of interfaces implemented by the class, if any, preceded by the keyword implements. A class can implement more than one interface.</li>
+<li>Body: The class body is surrounded by braces, { }.</li>
+</ol>
+<br>
+<li>C: Object</li>
+It is a basic unit of Object-Oriented Programming and represents real-life entities.  A typical Java program creates many objects, which as you know, interact by invoking methods. An object consists of :
+
+<ol>
+<li>State: It is represented by the attributes of an object. It also reflects the properties of an object.
+</li>
+<li>Behavior: It is represented by the methods of an object. It also reflects the response of an object to other objects.</li>
+<li>Identity: It gives a unique name to an object and enables one object to interact with other objects.</li>
+</ol>
+<br>
+<li>D: Interface</li>
+Like a class, an interface can have methods and variables, but the methods declared in an interface are by default abstract (only method signature, no body).   
+<ol>
+<li>Interfaces specify what a class must do and not how. It is the blueprint of the class.
+</li>
+<li>An Interface is about capabilities like a Player may be an interface and any class implementing Player must be able to (or must implement) move(). So it specifies a set of methods that the class has to implement.</li>
+<li>If a class implements an interface and does not provide method bodies for all functions specified in the interface, then the class must be declared abstract.</li>
+<li>A Java library example is Comparator Interface. If a class implements this interface, then it can be used to sort a collection.</li>
+</ol>
+<br>
+<li>E: Array</li>
+An array is a group of like-typed variables that are referred to by a common name. Arrays in Java work differently than they do in C/C++. The following are some important points about Java arrays. 
+<ol>
+<li>In Java, all arrays are dynamically allocated. (discussed below)</li>
+<li>Since arrays are objects in Java, we can find their length using member length. This is different from C/C++ where we find length using size.</li>
+<li>A Java array variable can also be declared like other variables with [] after the data type.</li>
+<li>The variables in the array are ordered and each has an index beginning from 0.</li>
+<li>Java array can also be used as a static field, a local variable, or a method parameter.</li>
+<li>The size of an array must be specified by an int value and not long or short.</li>
+<li>The direct superclass of an array type is Object.</li>
+<li>Every array type implements the interfaces Cloneable and java.io.Serializable.</li>
+
+
+
+
