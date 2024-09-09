@@ -1,3 +1,9 @@
+# Java Learning Journey
+=======================
+
+A personal knowledge base for my Java learning journey, featuring notes, code examples, and projects that I've worked on as I learn and explore the language.
+
+
 <h1>Java | How to start learning Java</h1>
 
 Java is one of the most popular and widely used programming languages and platforms. A platform is an environment that helps to develop and run programs written in any programming language.
